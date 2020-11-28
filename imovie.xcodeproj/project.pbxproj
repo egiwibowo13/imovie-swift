@@ -44,6 +44,7 @@
 		503030BB255D9ECE003159C2 /* FavoritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503030BA255D9ECE003159C2 /* FavoritePresenter.swift */; };
 		503030C0255DAD56003159C2 /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503030BF255DAD56003159C2 /* DetailPresenter.swift */; };
 		503030C3255DAD90003159C2 /* DetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503030C2255DAD90003159C2 /* DetailInteractor.swift */; };
+		503BC213257208FD005F868E /* imovieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 503BC212257208FD005F868E /* imovieTests.swift */; };
 		50747230255EFFB4000824CD /* ViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5074722F255EFFB4000824CD /* ViewExt.swift */; };
 		50747233255F0F6D000824CD /* MovieThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50747232255F0F6D000824CD /* MovieThumbnail.swift */; };
 		50F65201255FAE54002FF96B /* MString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F65200255FAE54002FF96B /* MString.swift */; };
@@ -52,6 +53,13 @@
 
 /* Begin PBXContainerItemProxy section */
 		501020D125715DA100A48113 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50302DDE2555A027003159C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50302DE52555A027003159C2;
+			remoteInfo = imovie;
+		};
+		503BC215257208FD005F868E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 50302DDE2555A027003159C2 /* Project object */;
 			proxyType = 1;
@@ -98,6 +106,9 @@
 		503030BA255D9ECE003159C2 /* FavoritePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePresenter.swift; sourceTree = "<group>"; };
 		503030BF255DAD56003159C2 /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		503030C2255DAD90003159C2 /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
+		503BC210257208FC005F868E /* imovieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imovieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		503BC212257208FD005F868E /* imovieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imovieTests.swift; sourceTree = "<group>"; };
+		503BC214257208FD005F868E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5074722F255EFFB4000824CD /* ViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExt.swift; sourceTree = "<group>"; };
 		50747232255F0F6D000824CD /* MovieThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieThumbnail.swift; sourceTree = "<group>"; };
 		50F65200255FAE54002FF96B /* MString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MString.swift; sourceTree = "<group>"; };
@@ -123,6 +134,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		503BC20D257208FC005F868E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -141,6 +159,7 @@
 				50302DF92555A0E6003159C2 /* .swiftlint.yml */,
 				50302DE82555A027003159C2 /* imovie */,
 				501020CD25715DA100A48113 /* imovieUITests */,
+				503BC211257208FC005F868E /* imovieTests */,
 				50302DE72555A027003159C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -150,6 +169,7 @@
 			children = (
 				50302DE62555A027003159C2 /* imovie.app */,
 				501020CC25715DA100A48113 /* imovieUITests.xctest */,
+				503BC210257208FC005F868E /* imovieTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -446,6 +466,15 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
+		503BC211257208FC005F868E /* imovieTests */ = {
+			isa = PBXGroup;
+			children = (
+				503BC212257208FD005F868E /* imovieTests.swift */,
+				503BC214257208FD005F868E /* Info.plist */,
+			);
+			path = imovieTests;
+			sourceTree = "<group>";
+		};
 		50F651FF255FAE11002FF96B /* String */ = {
 			isa = PBXGroup;
 			children = (
@@ -507,6 +536,24 @@
 			productReference = 50302DE62555A027003159C2 /* imovie.app */;
 			productType = "com.apple.product-type.application";
 		};
+		503BC20F257208FC005F868E /* imovieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 503BC219257208FD005F868E /* Build configuration list for PBXNativeTarget "imovieTests" */;
+			buildPhases = (
+				503BC20C257208FC005F868E /* Sources */,
+				503BC20D257208FC005F868E /* Frameworks */,
+				503BC20E257208FC005F868E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				503BC216257208FD005F868E /* PBXTargetDependency */,
+			);
+			name = imovieTests;
+			productName = imovieTests;
+			productReference = 503BC210257208FC005F868E /* imovieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -522,6 +569,10 @@
 					};
 					50302DE52555A027003159C2 = {
 						CreatedOnToolsVersion = 12.0.1;
+					};
+					503BC20F257208FC005F868E = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 50302DE52555A027003159C2;
 					};
 				};
 			};
@@ -545,6 +596,7 @@
 			targets = (
 				50302DE52555A027003159C2 /* imovie */,
 				501020CB25715DA100A48113 /* imovieUITests */,
+				503BC20F257208FC005F868E /* imovieTests */,
 			);
 		};
 /* End PBXProject section */
@@ -564,6 +616,13 @@
 				50302DFA2555A0E6003159C2 /* .swiftlint.yml in Resources */,
 				50302DF12555A028003159C2 /* Preview Assets.xcassets in Resources */,
 				50302DEE2555A028003159C2 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		503BC20E257208FC005F868E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -639,6 +698,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		503BC20C257208FC005F868E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				503BC213257208FD005F868E /* imovieTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -646,6 +713,11 @@
 			isa = PBXTargetDependency;
 			target = 50302DE52555A027003159C2 /* imovie */;
 			targetProxy = 501020D125715DA100A48113 /* PBXContainerItemProxy */;
+		};
+		503BC216257208FD005F868E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50302DE52555A027003159C2 /* imovie */;
+			targetProxy = 503BC215257208FD005F868E /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -844,6 +916,44 @@
 			};
 			name = Release;
 		};
+		503BC217257208FD005F868E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = imovieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = egiwibowo13.imovieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/imovie.app/imovie";
+			};
+			name = Debug;
+		};
+		503BC218257208FD005F868E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = imovieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = egiwibowo13.imovieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/imovie.app/imovie";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -870,6 +980,15 @@
 			buildConfigurations = (
 				50302DF62555A028003159C2 /* Debug */,
 				50302DF72555A028003159C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		503BC219257208FD005F868E /* Build configuration list for PBXNativeTarget "imovieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				503BC217257208FD005F868E /* Debug */,
+				503BC218257208FD005F868E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
