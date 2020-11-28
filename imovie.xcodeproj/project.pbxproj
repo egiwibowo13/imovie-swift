@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		501020CF25715DA100A48113 /* imovieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501020CE25715DA100A48113 /* imovieUITests.swift */; };
 		50302DEA2555A027003159C2 /* imovieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50302DE92555A027003159C2 /* imovieApp.swift */; };
 		50302DEC2555A027003159C2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50302DEB2555A027003159C2 /* ContentView.swift */; };
 		50302DEE2555A028003159C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50302DED2555A028003159C2 /* Assets.xcassets */; };
@@ -49,7 +50,20 @@
 		50F65207255FB8CB002FF96B /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50F65206255FB8CB002FF96B /* DetailRouter.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		501020D125715DA100A48113 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50302DDE2555A027003159C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50302DE52555A027003159C2;
+			remoteInfo = imovie;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		501020CC25715DA100A48113 /* imovieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = imovieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		501020CE25715DA100A48113 /* imovieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imovieUITests.swift; sourceTree = "<group>"; };
+		501020D025715DA100A48113 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50302DE62555A027003159C2 /* imovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = imovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50302DE92555A027003159C2 /* imovieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imovieApp.swift; sourceTree = "<group>"; };
 		50302DEB2555A027003159C2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,6 +105,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		501020C925715DA100A48113 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50302DE32555A027003159C2 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -105,11 +126,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		501020CD25715DA100A48113 /* imovieUITests */ = {
+			isa = PBXGroup;
+			children = (
+				501020CE25715DA100A48113 /* imovieUITests.swift */,
+				501020D025715DA100A48113 /* Info.plist */,
+			);
+			path = imovieUITests;
+			sourceTree = "<group>";
+		};
 		50302DDD2555A027003159C2 = {
 			isa = PBXGroup;
 			children = (
 				50302DF92555A0E6003159C2 /* .swiftlint.yml */,
 				50302DE82555A027003159C2 /* imovie */,
+				501020CD25715DA100A48113 /* imovieUITests */,
 				50302DE72555A027003159C2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -118,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				50302DE62555A027003159C2 /* imovie.app */,
+				501020CC25715DA100A48113 /* imovieUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -433,6 +465,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		501020CB25715DA100A48113 /* imovieUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 501020D525715DA100A48113 /* Build configuration list for PBXNativeTarget "imovieUITests" */;
+			buildPhases = (
+				501020C825715DA100A48113 /* Sources */,
+				501020C925715DA100A48113 /* Frameworks */,
+				501020CA25715DA100A48113 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				501020D225715DA100A48113 /* PBXTargetDependency */,
+			);
+			name = imovieUITests;
+			productName = imovieUITests;
+			productReference = 501020CC25715DA100A48113 /* imovieUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		50302DE52555A027003159C2 /* imovie */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 50302DF52555A028003159C2 /* Build configuration list for PBXNativeTarget "imovie" */;
@@ -466,6 +516,10 @@
 				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
+					501020CB25715DA100A48113 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = 50302DE52555A027003159C2;
+					};
 					50302DE52555A027003159C2 = {
 						CreatedOnToolsVersion = 12.0.1;
 					};
@@ -490,11 +544,19 @@
 			projectRoot = "";
 			targets = (
 				50302DE52555A027003159C2 /* imovie */,
+				501020CB25715DA100A48113 /* imovieUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		501020CA25715DA100A48113 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50302DE42555A027003159C2 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -529,6 +591,14 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		501020C825715DA100A48113 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				501020CF25715DA100A48113 /* imovieUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		50302DE22555A027003159C2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -571,7 +641,51 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		501020D225715DA100A48113 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50302DE52555A027003159C2 /* imovie */;
+			targetProxy = 501020D125715DA100A48113 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		501020D325715DA100A48113 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = imovieUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = egiwibowo13.imovieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = imovie;
+			};
+			name = Debug;
+		};
+		501020D425715DA100A48113 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = imovieUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = egiwibowo13.imovieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = imovie;
+			};
+			name = Release;
+		};
 		50302DF32555A028003159C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -733,6 +847,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		501020D525715DA100A48113 /* Build configuration list for PBXNativeTarget "imovieUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				501020D325715DA100A48113 /* Debug */,
+				501020D425715DA100A48113 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		50302DE12555A027003159C2 /* Build configuration list for PBXProject "imovie" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
